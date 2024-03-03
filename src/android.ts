@@ -6,7 +6,7 @@ export class FloatingWindowAndroid
   extends WebPlugin
   implements FloatingWindowPlugin
 {
-  closeFloatingWindow(): Promise<null> {
+  closeFloatingWindow(): Promise<any> {
     throw new Error('Method not implemented.');
   }
   async showFloatingWindow(options: { url: string }): Promise<{ url: string }> {
