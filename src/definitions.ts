@@ -1,3 +1,4 @@
 export interface FloatingWindowPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  showFloatingWindow(options: { url: string }): Promise<{ url: string }>;
+  closeFloatingWindow(): Promise<null>;
 }

@@ -3,7 +3,7 @@ import { registerPlugin } from '@capacitor/core';
 import type { FloatingWindowPlugin } from './definitions';
 
 const FloatingWindow = registerPlugin<FloatingWindowPlugin>('FloatingWindow', {
-  web: () => import('./web').then(m => new m.FloatingWindowWeb()),
+  android: () => import('./android').then(m => new m.FloatingWindowAndroid()),
 });
 
 export * from './definitions';

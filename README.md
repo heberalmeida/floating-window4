@@ -11,9 +11,39 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`showFloatingWindow(...)`](#showfloatingwindow)
+* [`closeFloatingWindow()`](#closefloatingwindow)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### showFloatingWindow(...)
+
+```typescript
+showFloatingWindow(options: { url: string; }) => Promise<{ url: string; }>
+```
+
+| Param         | Type                          |
+| ------------- | ----------------------------- |
+| **`options`** | <code>{ url: string; }</code> |
+
+**Returns:** <code>Promise&lt;{ url: string; }&gt;</code>
+
+--------------------
+
+
+### closeFloatingWindow()
+
+```typescript
+closeFloatingWindow() => Promise<null>
+```
+
+**Returns:** <code>Promise&lt;null&gt;</code>
+
+--------------------
+
 </docgen-api>

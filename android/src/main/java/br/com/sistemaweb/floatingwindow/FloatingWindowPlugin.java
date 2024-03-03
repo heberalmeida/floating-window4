@@ -5,18 +5,23 @@ import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
+import com.getcapacitor.NativePlugin;
 
-@CapacitorPlugin(name = "FloatingWindow")
+@NativePlugin(name = "FloatingWindow")
 public class FloatingWindowPlugin extends Plugin {
 
     private FloatingWindow implementation = new FloatingWindow();
 
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
+    public void showFloatingWindow(PluginCall call) {
+        String url = call.getString("url", "");
+        implementation.showFloatingWindow(getContext(), url);
+        call.resolve();
+    }
 
-        JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
-        call.resolve(ret);
+    @PluginMethod
+    public void closeFloatingWindow(PluginCall call) {
+        implementation.closeFloatingWindow();
+        call.resolve();
     }
 }
