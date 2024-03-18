@@ -1,4 +1,4 @@
-package br.com.heber.coords;
+package br.com.sistemaweb.floatingwindow;
 
 import android.app.Activity;
 import android.content.Context;
@@ -124,20 +124,5 @@ public class FloatingWindowPlugin extends Plugin {
             }
         });
         call.resolve();
-    }
-
-    @Override
-    protected void handleOnActivityResult(int requestCode, int resultCode, Intent data) {
-        super.handleOnActivityResult(requestCode, resultCode, data);
-        PluginCall call = getSavedCall();
-        if (call == null) return;
-
-        if (requestCode == OVERLAY_PERMISSION_REQ_CODE) {
-            if (Settings.canDrawOverlays(getContext())) {
-                createFloatingWindow(call);
-            } else {
-                call.reject("Overlay permission is required.");
-            }
-        }
     }
 }

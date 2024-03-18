@@ -1,6 +1,6 @@
 {
   "name": "floating-window-cap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FloatingWindowCapacitor is a plugin that enables the creation of fixed floating windows on Android apps, making it easy to display important information persistently and conveniently.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
