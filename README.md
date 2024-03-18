@@ -1,11 +1,11 @@
-# floating-window-capacitor
+# floating-window-cap
 
 FloatingWindowCapacitor is a plugin that enables the creation of fixed floating windows on Android apps, making it easy to display important information persistently and conveniently.
 
 ## Install
 
 ```bash
-npm install floating-window-capacitor
+npm install floating-window-cap
 npx cap sync
 ```
 
