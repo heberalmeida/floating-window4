@@ -26,7 +26,7 @@ import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 import com.getcapacitor.NativePlugin;
 
-@NativePlugin(name = "FloatingWindow")
+@NativePlugin(name = "FloatingWindowPlugin")
 public class FloatingWindowPlugin extends Plugin {
 
     private WindowManager windowManager;
